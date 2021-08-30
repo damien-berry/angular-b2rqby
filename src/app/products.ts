@@ -23,9 +23,14 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: ''
+  },
+  {
+    id: 4,
+    name: 'Phone XXL',
+    price: 899,
+    description: 'Big one'
   }
 ];
-
 
 /*
 Copyright Google LLC. All Rights Reserved.
