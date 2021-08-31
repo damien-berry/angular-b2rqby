@@ -5,12 +5,13 @@
     <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
       {{product.name}}
     </a>
+    <button (click)="share()" class="button fancy-button">Share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()" class="button fancy-button"></app-product-alerts>
     <p *ngIf="product.description">
       Description: {{product.description}}
     </p>
-    <button (click)="share()">Share</button>
-    <app-product-alerts [product]="product" (notify)="onNotify()">
-    </app-product-alerts>
+
+
   </h3>
 
 </div>
